@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <immintrin.h>
-// #include <time.h>
-// #define TIME_UTC 1
+#include <time.h>
+#define TIME_UTC 1
 
 #define M 131
 const uint64_t f[3] = {0x0000000000002007, 0x0000000000000000, 0x0000000000000008};
@@ -523,7 +523,7 @@ void test_inv_time(uint64_t res[5], uint64_t f1[5])
 int main(void)
 {
 #ifndef ONLINE_JUDGE
-    FILE *in = fopen("input2.bin", "rb");
+    FILE *in = fopen("input.bin", "rb");
     FILE *out = fopen("output.bin", "wb");
 #endif
 
